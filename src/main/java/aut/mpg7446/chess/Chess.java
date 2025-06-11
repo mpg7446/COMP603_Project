@@ -8,6 +8,10 @@ import aut.mpg7446.chess.file.FileManager;
 import aut.mpg7446.chess.pieces.PieceConvertor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
 
 /**
  *
@@ -23,10 +27,42 @@ public class Chess {
     
     public static Board.Team playingTeam;
     public static boolean playing;
+    
+    // Networking
+    public static Connection conn;
+    public static String url = "jdbc:derby://localhost:1527/ChessDB;create=true";
+    public static String username = "root";
+    public static String password = "123";
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
+//        if (!establishConnection()) {
+//            return;
+//        }
+//        
+//        // start Derby connection
+//        Scanner scanner = new Scanner(System.in); // change this to GUI later
+//        do {
+//            System.out.print("Enter Database Username: ");
+//            username = scanner.nextLine();
+//            System.out.print("Enter Database Password: ");
+//            password = scanner.nextLine();
+//        } while (!establishConnection());
+//        scanner.close();
+        
+        
         fileManager = new FileManager("resources/layout.txt","resources/saved_board.txt");
         startGame();
+    }
+    
+    public static boolean establishConnection() {
+        try {
+            conn = DriverManager.getConnection(url, username, password);
+            System.out.println("Connected successfully to " + url);
+            return true;
+        } catch (SQLException e) {
+            System.err.println("Failed to connect: " + e.getMessage());
+            return false;
+        }
     }
     
     public static void startGame() {
