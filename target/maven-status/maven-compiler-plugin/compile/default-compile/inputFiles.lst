@@ -1,18 +1,18 @@
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\Board.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\Chess.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\ConsoleInputs.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\file\BoardFileReader.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\file\BoardFileWriter.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\file\FileManager.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\Bishop.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\CheckablePiece.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\ExtendablePiece.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\King.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\Knight.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\Pawn.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\Piece.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\PieceConvertor.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\Queen.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\Rook.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\pieces\SpecialStartPiece.java
-F:\AUT\COMP603\Assignment 1\Chess\src\main\java\aut\mpg7446\chess\Renderer.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\Board.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\Chess.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\ConsoleInputs.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\file\BoardFileReader.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\file\BoardFileWriter.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\file\FileManager.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Bishop.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\CheckablePiece.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\ExtendablePiece.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\King.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Knight.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Pawn.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Piece.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\PieceConvertor.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Queen.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Rook.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\SpecialStartPiece.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\Renderer.java
