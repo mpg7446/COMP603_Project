@@ -8,6 +8,6 @@ package aut.mpg7446.chess.gui;
  *
  * @author mpg7446
  */
-public interface component {
+public interface ScreenManager {
     
 }

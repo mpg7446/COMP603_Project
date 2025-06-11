@@ -7,6 +7,7 @@ package aut.mpg7446.chess.gui;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Toolkit;
+import java.util.LinkedList;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
@@ -16,6 +17,7 @@ import javax.swing.JFrame;
  */
 public class Screen extends JComponent {
     private JFrame frame;
+    private LinkedList<IScreenComponent> components;
     
     public Screen(String title, int width, int height, int x, int y, int behaviour) {
         frame = new JFrame(title);
@@ -45,7 +47,11 @@ public class Screen extends JComponent {
     }
     
     @Override
-    public void paintComponent(Graphics G) {
-        
+    public void paintComponent(Graphics g) {
+        components.forEach((o) -> o.draw(g));
+    }
+    // alternatively, this method could be called from the component itself, passing through the Graphics object
+    private void paintComponent(Graphics g, IScreenComponent component) {
+        // check what type of component
     }
 }
