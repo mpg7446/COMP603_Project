@@ -4,6 +4,7 @@ F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\ConsoleInputs.jav
 F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\file\BoardFileReader.java
 F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\file\BoardFileWriter.java
 F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\file\FileManager.java
+F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\gui\Screen.java
 F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\Bishop.java
 F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\CheckablePiece.java
 F:\AUT\COMP603\COMP603_Project\src\main\java\aut\mpg7446\chess\pieces\ExtendablePiece.java

@@ -12,6 +12,7 @@ aut\mpg7446\chess\pieces\ExtendablePiece.class
 aut\mpg7446\chess\pieces\Knight.class
 aut\mpg7446\chess\pieces\SpecialStartPiece.class
 aut\mpg7446\chess\file\BoardFileWriter.class
+aut\mpg7446\chess\gui\Screen.class
 aut\mpg7446\chess\Chess.class
 aut\mpg7446\chess\pieces\King.class
 aut\mpg7446\chess\pieces\Rook.class

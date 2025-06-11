@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Scanner;
+import javax.swing.JFrame;
 
 /**
  *
@@ -49,11 +50,17 @@ public class Chess {
 //        } while (!establishConnection());
 //        scanner.close();
         
+        JFrame f = new JFrame("CHESSSSSSSSS");
+        f.setSize(1300, 1200);
+        f.setLocation(100, 100);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
         
         fileManager = new FileManager("resources/layout.txt","resources/saved_board.txt");
         startGame();
     }
     
+    // TODO move this into seperate connection manager class
     public static boolean establishConnection() {
         try {
             conn = DriverManager.getConnection(url, username, password);
