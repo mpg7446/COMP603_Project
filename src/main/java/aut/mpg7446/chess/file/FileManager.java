@@ -6,6 +6,7 @@ package aut.mpg7446.chess.file;
 
 import aut.mpg7446.chess.Board;
 import aut.mpg7446.chess.Chess;
+import aut.mpg7446.chess.gui.ScreenManager;
 import aut.mpg7446.chess.pieces.Piece;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -58,6 +59,7 @@ public class FileManager {
                 BoardFileReader fr = new BoardFileReader(boardFileLocation);
                 internalBoardTeam = fr.ReadLastTeam();
                 internalBoard = fr.ReadBoard();
+                ScreenManager.openScreen(ScreenManager.loadScreen);
                 
                 if (Chess.consoleInputs.askForChar("Found previously saved game, load save?", new char[]{'y','n'}) == 'n') {
                     System.out.println("Starting new game!");

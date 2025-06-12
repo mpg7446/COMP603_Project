@@ -5,13 +5,18 @@
 package aut.mpg7446.chess;
 
 import aut.mpg7446.chess.file.FileManager;
+import aut.mpg7446.chess.gui.Screen;
+import aut.mpg7446.chess.gui.ScreenManager;
+import aut.mpg7446.chess.gui.component.TextComponent;
 import aut.mpg7446.chess.pieces.PieceConvertor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.LinkedList;
 import java.util.Scanner;
+import javax.swing.JComponent;
 import javax.swing.JFrame;
 
 /**
@@ -49,12 +54,12 @@ public class Chess {
 //            password = scanner.nextLine();
 //        } while (!establishConnection());
 //        scanner.close();
-        
-        JFrame f = new JFrame("CHESSSSSSSSS");
-        f.setSize(1300, 1200);
-        f.setLocation(100, 100);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setVisible(true);
+
+        LinkedList<JComponent> components = new LinkedList<JComponent>();
+        components.add(new TextComponent("ass", 150, 100));
+        ScreenManager.setScreens(new Screen("Chess",300, 200, JFrame.EXIT_ON_CLOSE, components),
+                new Screen("Load Save", 200, 150, JFrame.DISPOSE_ON_CLOSE, new LinkedList<JComponent>()));
+        ScreenManager.setScreen(ScreenManager.boardScreen);
         
         fileManager = new FileManager("resources/layout.txt","resources/saved_board.txt");
         startGame();
