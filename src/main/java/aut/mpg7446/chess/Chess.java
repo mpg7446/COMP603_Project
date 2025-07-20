@@ -30,36 +30,37 @@ public class Chess {
     public static ConsoleInputs consoleInputs = new ConsoleInputs();
     public static Renderer renderer;
     public static FileManager fileManager;
+//    public static ScreenManager screenManager = new ScreenManager();
     
     public static Board.Team playingTeam;
     public static boolean playing;
     
     // Networking
     public static Connection conn;
-    public static String url = "jdbc:derby://localhost:1527/ChessDB;create=true";
+    public static String url = "jdbc:derby://localhost:1527/ChessDB";
     public static String username = "root";
     public static String password = "123";
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
-//        if (!establishConnection()) {
-//            return;
-//        }
-//        
-//        // start Derby connection
-//        Scanner scanner = new Scanner(System.in); // change this to GUI later
-//        do {
-//            System.out.print("Enter Database Username: ");
-//            username = scanner.nextLine();
-//            System.out.print("Enter Database Password: ");
-//            password = scanner.nextLine();
-//        } while (!establishConnection());
-//        scanner.close();
+        if (!establishConnection()) {
+            return;
+        }
+        
+        // start Derby connection
+        Scanner scanner = new Scanner(System.in); // change this to GUI later
+        do {
+            System.out.print("Enter Database Username: ");
+            username = scanner.nextLine();
+            System.out.print("Enter Database Password: ");
+            password = scanner.nextLine();
+        } while (!establishConnection());
+        scanner.close();
 
-        LinkedList<JComponent> components = new LinkedList<JComponent>();
-        components.add(new TextComponent("ass", 150, 100));
-        ScreenManager.setScreens(new Screen("Chess",300, 200, JFrame.EXIT_ON_CLOSE, components),
-                new Screen("Load Save", 200, 150, JFrame.DISPOSE_ON_CLOSE, new LinkedList<JComponent>()));
-        ScreenManager.setScreen(ScreenManager.boardScreen);
+//        LinkedList<JComponent> components = new LinkedList<JComponent>();
+//        components.add(new TextComponent("ass", 150, 100));
+//        screenManager.setScreens(new Screen("Chess",300, 200, JFrame.EXIT_ON_CLOSE, components),
+//                new Screen("Load Save", 200, 150, JFrame.DISPOSE_ON_CLOSE, new LinkedList<JComponent>()));
+//        ScreenManager.setScreen(ScreenManager.mainScreen);
         
         fileManager = new FileManager("resources/layout.txt","resources/saved_board.txt");
         startGame();

@@ -6,28 +6,21 @@ package aut.mpg7446.chess.gui.component;
 
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
-import javax.swing.JComponent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 
 /**
  *
  * @author mpg7446
  */
-public class ButtonComponent extends JComponent {
-    protected String text;
-    protected int x, y;
-    
-    public ButtonComponent(String text, int x, int y) {
-        this.text = text;
-        this.x = x;
-        this.y = y;
+public class ButtonComponent extends JButton {
+    public ActionListener actionLister;
+    public ButtonComponent(String text, ActionListener actionListener) {
+        super(text);
+        super.addActionListener(actionListener);
+        this.actionListener = actionListener;
     }
-    
-    @Override
-    public void paintComponent(Graphics g) {
-        
-    }
-    
-    public void actionPerformed(ActionEvent e) {
-        
+    public ButtonComponent(String text) {
+        super(text);
     }
 }

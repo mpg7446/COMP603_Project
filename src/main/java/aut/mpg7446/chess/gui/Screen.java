@@ -18,7 +18,7 @@ import aut.mpg7446.chess.gui.component.ScreenComponent;
  */
 public class Screen {
     private JFrame frame;
-//    private LinkedList<JComponent> components;
+    public LinkedList<JComponent> components;
     
     public Screen(String title, int width, int height, int x, int y, int behaviour, LinkedList<JComponent> components) {
         // set frame settings
@@ -48,7 +48,7 @@ public class Screen {
     
     public void setComponents(LinkedList<JComponent> components) {
         // set list of components
-//        this.components = components;
+        this.components = components;
         // add components to frame
         for (JComponent comp : components) {
             if (comp != null)
